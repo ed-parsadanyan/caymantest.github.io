@@ -35,6 +35,8 @@ async function generateTable() {
         container.appendChild(table);
     } catch (error) {
         console.error('Error generating table:', error);
+        const container = document.getElementById('book-table-container');
+        container.textContent = 'Error loading data. Please try again later.';
     }
 }
 
