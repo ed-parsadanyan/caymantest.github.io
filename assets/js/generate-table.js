@@ -1,6 +1,6 @@
 async function generateTable() {
     try {
-        const response = await fetch('/books.json');
+        const response = await fetch('/caymantest.github.io/books.json');
         const data = await response.json();
 
         const table = document.createElement('table');
